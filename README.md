@@ -54,7 +54,24 @@ Jeanne Boyarsky and Scott Selikoff.
 * Implementing Polymorphism
 
 ## Chapter 6: Exceptions
+* *** WATCH OUT ***
+    * Non-obvious exceptions such as out of bounds or number formatting exceptions. May be missed, and fool you into thinking te question is about something else.  ***LOOK FOR SOME EXCEPTION THROWN IN THE ANSWERS.*** 
 * Understanding Exceptions
+    * All exceptions and errors subclass java.lang.Throwable
+    * java.lang.Error
+        * Catestrophic event, programmer not expected to handle
+        * Ex: disk drive mysteriously disappeared
+    * java.lang.Exception and any subclasses except java.lang.Runtime
+        * Checked
+        * Programmer must `throws` or handle
+        * Ex: Trying to read from a file that doesn't exist
+    * java.lang.RuntimeException subclass java.lang.Exception
+        * Unchecked
+        * Unexpected, but not necessarily fatal
+        * Ex: Indexing an array out of bounds.
+    * Programmer-defined exception
+        * Extend from java.lang.Exception if you want it "checked"
+        * Extend from java.lang.Runtime if you want it "unchecked"
 * Using a try Statement
 * Recognizing Common Exception Types
 * Caling Methods That Throw Exceptions
