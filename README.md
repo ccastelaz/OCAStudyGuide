@@ -10,6 +10,9 @@ Jeanne Boyarsky and Scott Selikoff.
     * Pay attention to line numbers in exam code. ***IF THE CODE BEGINS WITH `1:` AND IT DOES NOT CONTAIN A PACKAGE OR IMPORT, THEN THE PACKAGE IS THE DEFAULT, AND THERE ARE NO IMPORTS.*** This may lead to code that will not compile. 
 
 ## Chapter 1: Java Building Blocks
+* ***Java Building Block Exam Evilness***
+    * Java keywords are always lowercase. ***Exam code and/or answers occasionally use capitalized keywords to throw you off.***
+
 * Understanding the Java Class Structure
 * Writing a main() Method
 * Understanding Package Declaratios and Imports
@@ -49,13 +52,17 @@ Jeanne Boyarsky and Scott Selikoff.
 * Writing Simple Lambdas
 
 ## Chapter 5: Class Design
+* ***Class Design Exam Evilness***
+    * ***Multiple static and instance blocks and variables are permitted, and can be intermixed.*** They are executed in the order they are written.
+
 * Introducting Class Inheritance
 * Creating Abstract Classes
 * Implementing Polymorphism
 
 ## Chapter 6: Exceptions
-* *** WATCH OUT ***
+* *** Exceptions Exam Evilness ***
     * Non-obvious exceptions such as out of bounds or number formatting exceptions. May be missed, and fool you into thinking te question is about something else.  ***LOOK FOR SOME EXCEPTION THROWN IN THE ANSWERS.*** 
+    
 * Understanding Exceptions
     * All exceptions and errors subclass java.lang.Throwable
     * java.lang.Error
