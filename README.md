@@ -55,17 +55,17 @@ Jeanne Boyarsky and Scott Selikoff.
 
 ## Chapter 6: Exceptions
 * *** WATCH OUT ***
-    * Non-obvious exceptions such as out of bounds or number formatting exceptions. May be missed, and fool you into thinking te question is about something else.  ***LOOK FOR SOME EXCEPTION THROWN IN THE ANSWERS.*** 
+    * The question code may contain non-obvious problems such as out of bounds or number formatting exceptions that may change the program flow, or fool you into thinking the question is about something else.  ***IF YOU SEE SOME MENTION OF AN EXCEPTION BEING THROWN IN ONE OR MORE OF THE POSSIBLE ANSWERS, REVIEW THE QUESTION CODE, LOOKING FOR NON-OBVIOUS EXCEPTION(S).*** 
 * Understanding Exceptions
     * All exceptions and errors subclass java.lang.Throwable
     * java.lang.Error
         * Catestrophic event, programmer not expected to handle
         * Ex: disk drive mysteriously disappeared
-    * java.lang.Exception and any subclasses except java.lang.Runtime
+    * java.lang.Exception and any class that subclasses it, except for java.lang.Runtime
         * Checked
         * Programmer must `throws` or handle
         * Ex: Trying to read from a file that doesn't exist
-    * java.lang.RuntimeException subclass java.lang.Exception
+    * java.lang.RuntimeException subclasses java.lang.Exception
         * Unchecked
         * Unexpected, but not necessarily fatal
         * Ex: Indexing an array out of bounds.
