@@ -4,7 +4,9 @@
 Jeanne Boyarsky and Scott Selikoff. 
 
 
-## General Exam Evilness
+## General Exam Tips, and Evilness to Watch For
+* ***DO NOT TAKE EXAM TIRED.***
+
 * ***READ EXAM CODE CAREFULLY***
 
     * Code formatting is frequently less than could be desired, especially in terms of curly braces and scoping.  ***Watch out for tricky one-line `ifs`, and `for` or `while` loops hidden in poorly formatted code.***
@@ -38,33 +40,43 @@ Jeanne Boyarsky and Scott Selikoff.
     
     * ***Underscores `_` may be used in `int`, `short`,`long`, `float`, and `double` literals anywhere a comma would normally make sense.*** For example: `1,234`, `1,234.5`, `123,456`, and `123,456.5` are valid. `1,2`, `,1`, `1,.5`, and `1.5,` are ***not*** valid.
 
+    * ***Need to memorize: `public static void main(String[] args)`***
+
+    * ***Need to memorize: order of declaration is `package`, `import`,`class`. `package` and `import` are optional.***
+
+    * ***Literal integer values default to `int`, and literal floating-point values default to `double`.*** This is *extremely important* in understanding *implicit* casts, a.k.a. ***numeric promotion***. (See Chapter 2)
+
 * Understanding the Java Class Structure
 * Writing a main() Method
 * Understanding Package Declaratios and Imports
 * Creating Objects
 * Distinguishing Between Object References and Primitives
 
-    | Keyword | Type | Max |
-    | --- | --- | --- |
-    | boolean | true or false | n/a |
-    | byte | 8-bit integral value | 0x7F |
-    | short | 16-bit integral value | 0x7FFF |
-    | int | 32-bit integral value | 0x7FFFFFFF |
-    | long | 64-bit integral value | 0x7FFFFFFFFFFFFFFFL |
-    | float | 32-bit floating-point value |  |
-    | double | 64-bit floating-point value | |
-    | char | 16-bit Unicode value | |
+    * ***There are no unsigned numeric values.***
+
+        | Keyword | Type | Max |
+        | --- | --- | --- |
+        | boolean | true or false | n/a |
+        | byte | 8-bit integral value | 0x7F |
+        | short | 16-bit integral value | 0x7FFF |
+        | int | 32-bit integral value | 0x7FFFFFFF |
+        | long | 64-bit integral value | 0x7FFFFFFFFFFFFFFFL |
+        | float | 32-bit floating-point value |  |
+        | double | 64-bit floating-point value | |
+        | char | 16-bit Unicode value | |
 
 * Declaring and Initializing Variables
 * Understanding Default Initialization of Variables
 
-    | Type | Default |
-    | --- | --- |
-    | boolean | false |
-    | byte, short, int, long | 0 (in the type's bit-length) |
-    | float, double | 0.0 (in the type's bit-length) |
-    | char | '\u0000` (NUL)
-    | All object references (everything else) | null |
+    * ***Need to memorize the default initialization of instance and class variables.***
+
+        | Type | Default |
+        | --- | --- |
+        | boolean | false |
+        | byte, short, int, long | 0 (in the type's bit-length) |
+        | float, double | 0.0 (in the type's bit-length) |
+        | char | '\u0000` (NUL)
+        | All object references (everything else) | null |
 
 * Understanding Variable Scope
 * Ordering Elements in a Class
